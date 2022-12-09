@@ -321,7 +321,7 @@
             }
     
             function validateForm(){
-                if(!validateEmail() && !validateMessage() && !validateName() && !validateSubject){
+                if(!validateEmail() && !validateMessage() && !validateName() && !validateSubject()){
                     submitError.style.display = 'block';
                     submitError.innerHTML = 'Please fill all fields.';
                     setTimeout(function() {submitError.style.display = 'none';}, 3000);
